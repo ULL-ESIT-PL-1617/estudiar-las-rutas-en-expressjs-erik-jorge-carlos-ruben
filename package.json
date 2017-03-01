@@ -1,0 +1,32 @@
+{
+  "name": "estudiar-las-rutas-en-expressjs-erik-jorge-carlos-ruben",
+  "version": "1.0.0",
+  "description": "[Descripción de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/practicas/practicalearningrouting.html)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-erik-jorge-carlos-ruben.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-erik-jorge-carlos-ruben/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-erik-jorge-carlos-ruben#readme",
+
+  "devDependencies": {
+    "gh-pages": "^0.3.1",
+    "gitbook": "^2.1.0",
+    "gitbook-cli": "^0.3.4",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-shell": "^0.5.2"
+  },
+  "dependencies":{
+    "express": "^4.14.1",
+    "gulp": "^3.9.1"
+  }
+}
