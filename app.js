@@ -11,7 +11,7 @@ app.get('/', function(pet, res){
   res.sendfile(__dirname + 'docs/_book/index.html');
 });
 
-app.use(express.static(path.resolve('gh-pages')));
+app.use(express.static(path.resolve('docs')));
 
 app.listen(app.get('port'));
 //app.listen(port_iaas);
