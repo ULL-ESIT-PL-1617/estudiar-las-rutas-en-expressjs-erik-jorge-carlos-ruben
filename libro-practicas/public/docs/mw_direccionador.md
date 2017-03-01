@@ -2,11 +2,9 @@
 
 El middleware de nivel de direccionador funciona de la misma manera que el middleware de nivel de aplicación, excepto que está enlazado a una instancia de express.Router().
 
-```
-var router = express.Router();
-```
+```var router = express.Router();```
 
-Cargue el middleware de nivel de direccionador utilizando las funciones `router.use()` y `router.METHOD()`.
+Cargue el middleware de nivel de direccionador utilizando las funciones router.use() y router.METHOD().
 
 El siguiente código de ejemplo replica el sistema de middleware que se ha mostrado anteriormente para el middleware de nivel de aplicación, utilizando el middleware de nivel de direccionador:
 
@@ -49,4 +47,3 @@ router.get('/user/:id', function (req, res, next) {
 // mount the router on the app
 app.use('/', router);
 ```
-
