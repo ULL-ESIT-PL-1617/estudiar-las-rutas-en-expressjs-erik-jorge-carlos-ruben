@@ -11,7 +11,7 @@ app.get('/', function(pet, res){
   res.sendfile(__dirname + '/docs/_book/index.html');
 });
 
-app.use(express.static(path.resolve('/docs/_book')));
+//app.use(express.static(path.resolve('/docs/_book')));
 
 app.listen(app.get('port'));
 //app.listen(port_iaas);
