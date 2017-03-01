@@ -16,9 +16,9 @@ Si la función de middleware actual no finaliza el ciclo de solicitud/respuestas
 Una aplicación Express puede utilizar los siguientes tipos de middleware:
 
 * [Middleware de nivel de aplicación](mw_aplicacion.md)
-* [Middleware de nivel de direccionador]()
+* [Middleware de nivel de direccionador](mw_direccionador.md)
 * [Middleware de manejo de errores](mw_errores.md)
-* [Middleware incorporado]()
-* [Middleware de terceros]()
+* [Middleware incorporado](mw_incorporado.md)
+* [Middleware de terceros](mw_terceros.md)
 
 Puede cargar middleware de nivel de aplicación y de nivel de direccionador con una vía de acceso de montaje opcional. También puede cargar una serie de funciones de middleware a la vez, lo que crea una subpila del sistema de middleware en un punto de montaje.
