@@ -1,5 +1,9 @@
 # Router
 
+Videotutorial de routing en Express.js
+
+[ExpressJS Tutorial 23: Advance Routing](https://www.youtube.com/watch?v=26wm0IQsDCs)
+
 Un objeto *router* es una instancia aislada de middleware y rutas. Se puede pensar en ella como una "mini-aplicación", capaz sólo de realizar middleware y funciones de enrutamiento. Cada aplicación Express tiene un enrutador de aplicaciones incorporado.
 
 Un enrutador se comporta como el propio middleware, por lo que puede utilizarlo como argumento para app.use () o como argumento para el método use () de otro enrutador.
