@@ -5,6 +5,8 @@ var port_iaas = 8080;
 var app = express();
 var basic = require('./src/basic');
 var routing = require('./src/routing');
+var routing_api = require('./src/routing_api');
+
 // HEROKU
 app.set('port', (process.env.PORT || 5000));
 // Servidor para libro
@@ -17,6 +19,7 @@ app.use(express.static(path.resolve('public')));
 // Carga de los módulos de los códigos de ejemplo
 app.use('/basic', basic);
 app.use('/routing', routing);
+app.use('/myFirstRoute', routing_api);
 
 
 
