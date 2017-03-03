@@ -8,7 +8,7 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(pet, res){
-  res.sendfile(__dirname + 'public/_book/index.html');
+  res.sendfile(__dirname + 'public/index.html');
 });
 
 app.use(express.static(path.resolve('gh-pages')));
