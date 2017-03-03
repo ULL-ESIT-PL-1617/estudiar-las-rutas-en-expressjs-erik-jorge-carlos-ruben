@@ -10,6 +10,7 @@ gulp.task('build', shell.task(['gitbook build ./docs ./public']));
 
 gulp.task('serve', shell.task(['gitbook serve ./docs']));
 
+gulp.task('routing_api_tests', shell.task(['curl https://powerful-lowlands-94980.herokuapp.com/myFirstRoute/heyThereFirstRoute', 'curl https://powerful-lowlands-94980.herokuapp.com/myFirstRoute/heyThereFirstRouteAgain']));
 //gulp.task('deploy', shell.task(['npm run deploy']));
 
 //gulp.task('iaas', shell.task(['npm run iaas']));
