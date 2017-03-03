@@ -42,3 +42,6 @@ app.delete('/user', function (req, res) {
   res.send('Petición DELETE en /user');
 });
 ~~~
+
+Ejemplo de enrutamiento básico:
+[https://practica3.herokuapp.com/basic](https://practica3.herokuapp.com/basic)
