@@ -103,15 +103,15 @@ Ejemplos de vías de acceso de ruta basadas en expresiones regulares:
 Esta vía de acceso de ruta coincidirá con cualquier valor con una “a” en el nombre de la ruta.
 
 ~~~
-app.get(/a/, function(req, res) {
+app.get(/*a*/, function(req, res) {
   res.send('/a/');
 });
 ~~~
 Esta vía de acceso de ruta coincidirá con butterfly y dragonfly, pero no con butterflyman, dragonfly man, etc.
 
 ~~~
-app.get(/.*fly$/, function(req, res) {
-  res.send('/.*fly$/');
+app.get(/*fly$/, function(req, res) {
+  res.send('/*fly$/');
 });
 ~~~
 ### Manejadores de rutas
