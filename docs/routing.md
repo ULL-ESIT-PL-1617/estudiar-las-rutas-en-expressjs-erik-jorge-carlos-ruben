@@ -75,6 +75,11 @@ app.get('/ab?cd', function(req, res) {
   res.send('ab?cd');
 });
 ~~~
+
+Ejemplo:
+
+[https://practica3.herokuapp.com/routing/acd](https://practica3.herokuapp.com/routing/acd)
+
 Esta vía de acceso de ruta coincidirá con abcd, abbcd, abbbcd, etc.
 
 ~~~
@@ -82,6 +87,11 @@ app.get('/ab+cd', function(req, res) {
   res.send('ab+cd');
 });
 ~~~
+
+Ejemplo:
+
+[https://practica3.herokuapp.com/routing/abbbcd](https://practica3.herokuapp.com/routing/abbbcd)
+
 Esta vía de acceso de ruta coincidirá con abcd, abxcd, abRABDOMcd, ab123cd, etc.
 
 ~~~
@@ -89,6 +99,11 @@ app.get('/ab*cd', function(req, res) {
   res.send('ab*cd');
 });
 ~~~
+
+Ejemplo:
+
+[https://practica3.herokuapp.com/routing/abXYZcd](https://practica3.herokuapp.com/routing/abXYZcd)
+
 Esta vía de acceso de ruta coincidirá con /abe y /abcde.
 
 ~~~
@@ -96,6 +111,11 @@ app.get('/ab(cd)?e', function(req, res) {
  res.send('ab(cd)?e');
 });
 ~~~
+
+Ejemplo:
+
+[https://practica3.herokuapp.com/routing/abcde](https://practica3.herokuapp.com/routing/abcde)
+
 > Los caracteres ?, +, * y () son subconjuntos de sus equivalentes en expresiones regulares. El guión (-) y el punto (.) se interpretan literalmente en las vías de acceso basadas en series.
 
 Ejemplos de vías de acceso de ruta basadas en expresiones regulares:
@@ -103,17 +123,27 @@ Ejemplos de vías de acceso de ruta basadas en expresiones regulares:
 Esta vía de acceso de ruta coincidirá con cualquier valor con una “a” en el nombre de la ruta.
 
 ~~~
-app.get(/a/, function(req, res) {
+app.get(/*a*/, function(req, res) {
   res.send('/a/');
 });
 ~~~
+
+Ejemplo:
+
+[https://practica3.herokuapp.com/routing/xxxaxxx](https://practica3.herokuapp.com/routing/xxxaxxx)
+
 Esta vía de acceso de ruta coincidirá con butterfly y dragonfly, pero no con butterflyman, dragonfly man, etc.
 
 ~~~
-app.get(/.*fly$/, function(req, res) {
-  res.send('/.*fly$/');
+app.get(/*fly$/, function(req, res) {
+  res.send('/*fly$/');
 });
 ~~~
+
+Ejemplo:
+
+[https://practica3.herokuapp.com/routing/drgonfly](https://practica3.herokuapp.com/routing/drgonfly)
+
 ### Manejadores de rutas
 Puede haber varias funciones de devolución de llamada que se comportan como middleware para manejar una solicitud. La única excepción es que estas devoluciones de llamada pueden invocar next('route') para omitir el resto de las devoluciones de llamada de ruta. Puede utilizar este mecanismo para imponer condiciones previas en una ruta y, a continuación, pasar el control a las rutas posteriores si no hay motivo para continuar con la ruta actual.
 
@@ -135,6 +165,11 @@ app.get('/example/b', function (req, res, next) {
   res.send('Hello from B!');
 });
 ~~~
+
+Ejemplo:
+
+[https://practica3.herokuapp.com/routing/next](https://practica3.herokuapp.com/routing/next)
+
 Una matriz de funciones de devolución de llamada puede manejar una ruta. Por ejemplo:
 ~~~
 var cb0 = function (req, res, next) {
@@ -153,6 +188,11 @@ var cb2 = function (req, res) {
 
 app.get('/example/c', [cb0, cb1, cb2]);
 ~~~
+
+Ejemplo:
+
+[https://practica3.herokuapp.com/routing/next2](https://practica3.herokuapp.com/routing/next2)
+
 Una combinación de funciones independientes y matrices de funciones puede manejar una ruta. Por ejemplo:
 
 ~~~
