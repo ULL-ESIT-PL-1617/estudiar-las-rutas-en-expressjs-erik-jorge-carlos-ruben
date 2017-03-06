@@ -24,7 +24,9 @@ app.use('/myFirstRoute', routing_api);
 app.use('/middleware', middleware);
 
 
-
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
 // Establecer puerto de escucha
 /*var server = app.listen(8080, function () {
 
