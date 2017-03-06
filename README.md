@@ -16,8 +16,8 @@
   * [Página personal](http://alu0100767803.github.io/)
   * [Github personal](https://github.com/alu0100767803)
   * [Perfil campus virtual](https://campusvirtual.ull.es/1617/user/profile.php?id=18914)
-  * [Despliegue en heroku]()
-  * [Despliegue en IAAS]()
+  * [Despliegue en heroku](https://powerful-brushlands-77599.herokuapp.com/routing-api.html)
+  * [Despliegue en IAAS](http://10.6.129.212:8080/)
 
 * Rubén Labrador Páez
   * alu0100309553@ull.edu.es
