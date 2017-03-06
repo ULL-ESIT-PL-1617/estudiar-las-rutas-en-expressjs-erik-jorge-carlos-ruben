@@ -9,14 +9,14 @@
   * [Página personal](https://alu0100774054.github.io/)
   * [Github personal](https://github.com/alu0100774054)
   * [Perfil campus virtual](https://campusvirtual.ull.es/1617/user/view.php?id=18906&course=1148)
-  * [Despliegue en heroku]()
+  * [Despliegue en heroku](https://powerful-lowlands-94980.herokuapp.com/)
   * [Despliegue en IAAS](http://10.6.128.119:8080/)
 * Jorge Alonso Hernández
   * alu0100767803@ull.edu.es
   * [Página personal](http://alu0100767803.github.io/)
   * [Github personal](https://github.com/alu0100767803)
   * [Perfil campus virtual](https://campusvirtual.ull.es/1617/user/profile.php?id=18914)
-  * [Despliegue en heroku](https://powerful-brushlands-77599.herokuapp.com/routing-api.html)
+  * [Despliegue en heroku](https://hidden-caverns-57661.herokuapp.com/)
   * [Despliegue en IAAS](http://10.6.129.212:8080/)
 
 * Rubén Labrador Páez
