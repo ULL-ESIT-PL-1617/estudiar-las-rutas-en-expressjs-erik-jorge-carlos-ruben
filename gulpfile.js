@@ -35,3 +35,5 @@ gulp.task('rout_seis', shell.task(['curl -X GET https://practica3.herokuapp.com/
 gulp.task('next_uno', shell.task(['curl -X GET https://practica3.herokuapp.com/routing/next']));
 
 gulp.task('next_dos', shell.task(['curl -X GET https://practica3.herokuapp.com/routing/next2']));
+
+gulp.task('middleware', shell.task(['curl -X GET https://practica3.herokuapp.com/middleware/user/usuario']));
