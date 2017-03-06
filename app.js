@@ -9,7 +9,7 @@ var routing_api = require('./src/routing_api');
 var middleware = require('./src/middleware')
 
 // HEROKU
-app.set('port', (process.env.PORT || 5000));
+ app.set('port', (process.env.PORT || 5000));
 // Servidor para libro
 app.get('/', function(pet, res){
   res.sendfile(__dirname + '/public/index.html');
@@ -26,5 +26,11 @@ app.use('/middleware', middleware);
 
 
 // Establecer puerto de escucha
-app.listen(app.get('port'));
-//app.listen(port_iaas);
+/*var server = app.listen(8080, function () {
+
+  var host = server.address().address
+  var port = server.address().port
+
+  console.log('Example app listening at http://%s:%s', host, port)
+
+})*/
